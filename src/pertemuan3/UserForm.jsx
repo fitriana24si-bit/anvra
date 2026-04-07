@@ -61,7 +61,7 @@ export default function UserForm() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <Card>
         <h2 className="text-xl font-bold text-center mb-4 text-green-600">
-          Form Pendaftaran
+          Form Data Diri
         </h2>
 
         <form onSubmit={handleSubmit}>
@@ -71,7 +71,7 @@ export default function UserForm() {
 
           <SelectField label="Jenis Kelamin" name="gender" value={form.gender} onChange={handleChange} options={["Laki-laki", "Perempuan"]} error={error.gender} />
 
-          <SelectField label="Tujuan" name="tujuan" value={form.tujuan} onChange={handleChange} options={["Kuliah", "Kerja", "Liburan"]} error={error.tujuan} />
+          <SelectField label="Tujuan" name="tujuan" value={form.tujuan} onChange={handleChange} options={["Kuliah", "Kerja"]} error={error.tujuan} />
 
           {/* CONDITIONAL RENDERING */}
           {isValid && <Button type="submit">Submit</Button>}
