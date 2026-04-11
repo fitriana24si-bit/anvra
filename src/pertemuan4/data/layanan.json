@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "nama": "Konsultasi Karir",
+    "kategori": "Edukasi",
+    "harga": 50000,
+    "rating": 4.5,
+    "gambar": "/images/kantor1.jpg",
+    "penyedia": { "nama": "CareerHub", "kota": "Jakarta" },
+    "jadwal": { "hari": "Senin", "jam": "10:00" },
+    "kontak": { "email": "career@mail.com" }
+  },
+  {
+    "id": 2,
+    "nama": "Pelatihan Coding",
+    "kategori": "IT",
+    "harga": 100000,
+    "rating": 4.7,
+    "gambar": "/images/coding.jpg",
+    "penyedia": { "nama": "CodeLab", "kota": "Bandung" },
+    "jadwal": { "hari": "Selasa", "jam": "13:00" },
+    "kontak": { "email": "code@mail.com" }
+  },
+  {
+    "id": 3,
+    "nama": "Desain UI/UX",
+    "kategori": "IT",
+    "harga": 80000,
+    "rating": 4.6,
+    "gambar": "/images/design.jpg",
+    "penyedia": { "nama": "DesignPro", "kota": "Jakarta" },
+    "jadwal": { "hari": "Rabu", "jam": "09:00" },
+    "kontak": { "email": "design@mail.com" }
+  },
+  {
+    "id": 4,
+    "nama": "Bahasa Inggris",
+    "kategori": "Edukasi",
+    "harga": 60000,
+    "rating": 4.3,
+    "gambar": "/images/english.jpg",
+    "penyedia": { "nama": "EnglishClub", "kota": "Medan" },
+    "jadwal": { "hari": "Kamis", "jam": "15:00" },
+    "kontak": { "email": "eng@mail.com" }
+  },
+  {
+    "id": 5,
+    "nama": "Digital Marketing",
+    "kategori": "IT",
+    "harga": 90000,
+    "rating": 4.8,
+    "gambar": "/images/marketing.jpg",
+    "penyedia": { "nama": "MarketPro", "kota": "Surabaya" },
+    "jadwal": { "hari": "Jumat", "jam": "11:00" },
+    "kontak": { "email": "market@mail.com" }
+  },
+  {
+    "id": 6,
+    "nama": "Public Speaking",
+    "kategori": "Edukasi",
+    "harga": 70000,
+    "rating": 4.4,
+    "gambar": "/images/speaking.jpg",
+    "penyedia": { "nama": "SpeakUp", "kota": "Jakarta" },
+    "jadwal": { "hari": "Sabtu", "jam": "14:00" },
+    "kontak": { "email": "speak@mail.com" }
+  },
+  {
+    "id": 7,
+    "nama": "Web Development",
+    "kategori": "IT",
+    "harga": 120000,
+    "rating": 4.9,
+    "gambar": "/images/web.jpg",
+    "penyedia": { "nama": "DevSchool", "kota": "Bandung" },
+    "jadwal": { "hari": "Minggu", "jam": "10:00" },
+    "kontak": { "email": "dev@mail.com" }
+  },
+  {
+    "id": 8,
+    "nama": "Manajemen Waktu",
+    "kategori": "Edukasi",
+    "harga": 55000,
+    "rating": 4.2,
+    "gambar": "/images/waktu.jpg",
+    "penyedia": { "nama": "TimePro", "kota": "Padang" },
+    "jadwal": { "hari": "Senin", "jam": "08:00" },
+    "kontak": { "email": "time@mail.com" }
+  },
+  {
+    "id": 9,
+    "nama": "Data Science",
+    "kategori": "IT",
+    "harga": 150000,
+    "rating": 4.8,
+    "gambar": "/images/data.jpg",
+    "penyedia": { "nama": "DataLab", "kota": "Jakarta" },
+    "jadwal": { "hari": "Selasa", "jam": "16:00" },
+    "kontak": { "email": "data@mail.com" }
+  },
+  {
+    "id": 10,
+    "nama": "Leadership",
+    "kategori": "Edukasi",
+    "harga": 75000,
+    "rating": 4.5,
+    "gambar": "/images/leader.jpg",
+    "penyedia": { "nama": "LeaderPro", "kota": "Medan" },
+    "jadwal": { "hari": "Rabu", "jam": "13:00" },
+    "kontak": { "email": "lead@mail.com" }
+  },
+  {
+    "id": 11,
+    "nama": "Mobile Development",
+    "kategori": "IT",
+    "harga": 130000,
+    "rating": 4.7,
+    "gambar": "/images/mobile.jpg",
+    "penyedia": { "nama": "AppDev", "kota": "Bandung" },
+    "jadwal": { "hari": "Kamis", "jam": "10:00" },
+    "kontak": { "email": "app@mail.com" }
+  },
+  {
+    "id": 12,
+    "nama": "Psikologi Remaja",
+    "kategori": "Edukasi",
+    "harga": 60000,
+    "rating": 4.3,
+    "gambar": "/images/psikologi.jpg",
+    "penyedia": { "nama": "MindCare", "kota": "Jakarta" },
+    "jadwal": { "hari": "Jumat", "jam": "09:00" },
+    "kontak": { "email": "mind@mail.com" }
+  },
+  {
+    "id": 13,
+    "nama": "Cyber Security",
+    "kategori": "IT",
+    "harga": 140000,
+    "rating": 4.9,
+    "gambar": "/images/cyber.jpg",
+    "penyedia": { "nama": "SecureIT", "kota": "Surabaya" },
+    "jadwal": { "hari": "Sabtu", "jam": "15:00" },
+    "kontak": { "email": "secure@mail.com" }
+  },
+  {
+    "id": 14,
+    "nama": "Penulisan Kreatif",
+    "kategori": "Edukasi",
+    "harga": 65000,
+    "rating": 4.4,
+    "gambar": "/images/penulisan.jpg",
+    "penyedia": { "nama": "WriteHub", "kota": "Padang" },
+    "jadwal": { "hari": "Minggu", "jam": "11:00" },
+    "kontak": { "email": "write@mail.com" }
+  },
+  {
+    "id": 15,
+    "nama": "AI Basics",
+    "kategori": "IT",
+    "harga": 160000,
+    "rating": 4.8,
+    "gambar": "/images/ai.jpg",
+    "penyedia": { "nama": "AI Lab", "kota": "Jakarta" },
+    "jadwal": { "hari": "Senin", "jam": "14:00" },
+    "kontak": { "email": "ai@mail.com" }
+  },
+  {
+    "id": 16,
+    "nama": "Matematika Dasar",
+    "kategori": "Edukasi",
+    "harga": 50000,
+    "rating": 4.2,
+    "gambar": "/images/matematika.jpg",
+    "penyedia": { "nama": "MathCenter", "kota": "Medan" },
+    "jadwal": { "hari": "Selasa", "jam": "08:00" },
+    "kontak": { "email": "math@mail.com" }
+  },
+  {
+    "id": 17,
+    "nama": "Cloud Computing",
+    "kategori": "IT",
+    "harga": 170000,
+    "rating": 4.9,
+    "gambar": "/images/cloud.jpg",
+    "penyedia": { "nama": "CloudPro", "kota": "Bandung" },
+    "jadwal": { "hari": "Rabu", "jam": "10:00" },
+    "kontak": { "email": "cloud@mail.com" }
+  },
+  {
+    "id": 18,
+    "nama": "Motivasi Belajar",
+    "kategori": "Edukasi",
+    "harga": 55000,
+    "rating": 4.3,
+    "gambar": "/images/motivasi.jpg",
+    "penyedia": { "nama": "Motivate", "kota": "Padang" },
+    "jadwal": { "hari": "Kamis", "jam": "13:00" },
+    "kontak": { "email": "mot@mail.com" }
+  },
+  {
+    "id": 19,
+    "nama": "Frontend React",
+    "kategori": "IT",
+    "harga": 140000,
+    "rating": 4.8,
+    "gambar": "/images/frontend.jpg",
+    "penyedia": { "nama": "ReactDev", "kota": "Jakarta" },
+    "jadwal": { "hari": "Jumat", "jam": "15:00" },
+    "kontak": { "email": "react@mail.com" }
+  },
+  {
+    "id": 20,
+    "nama": "Etika Profesi",
+    "kategori": "Edukasi",
+    "harga": 60000,
+    "rating": 4.4,
+    "gambar": "/images/etika.jpg",
+    "penyedia": { "nama": "EthicPro", "kota": "Medan" },
+    "jadwal": { "hari": "Sabtu", "jam": "09:00" },
+    "kontak": { "email": "ethic@mail.com" }
+  }
+]
