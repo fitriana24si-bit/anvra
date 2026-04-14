@@ -1,63 +1,43 @@
 import data from "../data/layanan.json";
 import { useState } from "react";
+import SearchFilter from "../components/SearchFilter";
 
 export default function AdminView() {
-  const [search, setSearch] = useState("");
-  const [kategori, setKategori] = useState("");
-  const [kota, setKota] = useState("");
 
-  // FILTER LOGIC
+  // ⭐ PERUBAHAN MODUL: pakai satu state object
+  const [dataForm, setDataForm] = useState({
+    searchTerm: "",
+    kategori: "",
+    kota: ""
+  });
+
+  // ⭐ PERUBAHAN MODUL: satu handleChange
+  const handleChange = (evt) => {
+    const { name, value } = evt.target;
+
+    setDataForm({
+      ...dataForm,
+      [name]: value,
+    });
+  };
+
+  // ⭐ PERUBAHAN MODUL: pakai dataForm + toLowerCase
   const filtered = data.filter((item) =>
-    item.nama.toLowerCase().includes(search.toLowerCase()) &&
-    (kategori === "" || item.kategori === kategori) &&
-    (kota === "" || item.penyedia.kota === kota)
+    item.nama.toLowerCase().includes(dataForm.searchTerm.toLowerCase()) &&
+    (dataForm.kategori === "" || item.kategori === dataForm.kategori) &&
+    (dataForm.kota === "" || item.penyedia.kota === dataForm.kota)
   );
 
   return (
     <div className="p-5 min-h-screen bg-gray-100">
 
-      {/* TITLE */}
       <h1 className="text-2xl font-bold mb-6 text-center text-green-700">
         📊 Admin Panel
       </h1>
 
-      {/* SEARCH + FILTER */}
-      <div className="flex flex-col md:flex-row gap-3 mb-5">
+      {/* ⭐ PERUBAHAN MODUL: pakai component */}
+      <SearchFilter dataForm={dataForm} handleChange={handleChange} />
 
-        <input
-          type="text"
-          placeholder="🔍 Cari layanan..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="border p-2 rounded-lg w-full focus:ring-2 focus:ring-green-400 outline-none"
-        />
-
-        <select
-          value={kategori}
-          onChange={(e) => setKategori(e.target.value)}
-          className="border p-2 rounded-lg w-full md:w-1/3 focus:ring-2 focus:ring-green-400"
-        >
-          <option value="">Semua Kategori</option>
-          <option value="IT">IT</option>
-          <option value="Edukasi">Edukasi</option>
-        </select>
-
-        <select
-          value={kota}
-          onChange={(e) => setKota(e.target.value)}
-          className="border p-2 rounded-lg w-full md:w-1/3 focus:ring-2 focus:ring-green-400"
-        >
-          <option value="">Semua Kota</option>
-          <option value="Jakarta">Jakarta</option>
-          <option value="Bandung">Bandung</option>
-          <option value="Medan">Medan</option>
-          <option value="Padang">Padang</option>
-          <option value="Surabaya">Surabaya</option>
-        </select>
-
-      </div>
-
-      {/* TABLE */}
       <div className="overflow-x-auto bg-white shadow rounded-xl p-4">
 
         <table className="w-full text-sm">
@@ -75,10 +55,7 @@ export default function AdminView() {
           <tbody>
             {filtered.length > 0 ? (
               filtered.map((item) => (
-                <tr
-                  key={item.id}
-                  className="text-center border-t hover:bg-gray-50"
-                >
+                <tr key={item.id} className="text-center border-t hover:bg-gray-50">
                   <td className="p-2">{item.nama}</td>
                   <td className="p-2">{item.kategori}</td>
                   <td className="p-2">Rp {item.harga}</td>
