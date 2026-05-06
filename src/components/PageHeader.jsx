@@ -17,13 +17,10 @@ export default function PageHeader({ title, breadcrumb, children }) {
                         {breadcrumb ? renderBreadcrumb() : "Dashboard"}
                     </div>
                 </div>
-                {children ? (
-                    children
-                ) : (
-                    <button className="bg-amber-800 text-white px-4 py-2 rounded">
-                        Add Order
-                    </button>
-                )}
+
+                {/* ❌ BUTTON DEFAULT DIHAPUS */}
+                {/* Hanya tampil kalau memang dikirim dari halaman */}
+                {children && children}
             </div>
         </div>
     );
