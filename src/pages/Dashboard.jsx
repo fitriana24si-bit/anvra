@@ -289,7 +289,7 @@ export default function Dashboard() {
         <div style={{ paddingBottom: 32 }}>
             {/* Page Title */}
             <div style={{ marginBottom: 24 }}>
-                <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: "#111827" }}>Dashboard</h1>
+                <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, color: "#111827" }}>DashboardKu</h1>
                 <p style={{ margin: "4px 0 0", fontSize: 13, color: "#9CA3AF" }}>Home</p>
             </div>
 
